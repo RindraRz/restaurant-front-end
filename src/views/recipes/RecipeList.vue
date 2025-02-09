@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute} from 'vue-router'
 import type { Recipe } from '../../types'
 import { recipeApi } from '../../services/api'
 import Header from '../Header.vue'
