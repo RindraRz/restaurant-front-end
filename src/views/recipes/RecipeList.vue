@@ -6,7 +6,6 @@ import { recipeApi } from '../../services/api'
 import Header from '../Header.vue'
 import Loader from '../../components/Loader.vue'
 
-const router = useRouter()
 const recipes = ref<Recipe[]>([])
 const loading = ref(false)
 const route = useRoute()
