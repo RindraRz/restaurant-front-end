@@ -46,7 +46,7 @@ const handleLogin = async () => {
     localStorage.setItem('authToken', token);
 
     // Rediriger l'utilisateur vers la page d'accueil
-    router.push('/');
+    router.push('/dashboard');
   } catch (e) {
     error.value = 'Email ou mot de passe incorrect';
   } finally {
