@@ -16,7 +16,7 @@ setTimeout(() => {
 
 const logout = () => {
   localStorage.removeItem('authToken'); 
-  router.push('/login'); 
+  router.push('/'); 
 };
 defineProps<{
   title: string;
