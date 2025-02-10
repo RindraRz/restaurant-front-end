@@ -3,8 +3,11 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const email = ref('')
-const password = ref('')
+
+// Valeurs par défaut pour les champs email et password
+const email = ref('admin@gmail.com')
+const password = ref('admin')
+
 const loading = ref(false)
 const error = ref('')
 
@@ -19,7 +22,7 @@ const handleLogin = async () => {
     error.value = '';
 
     // Envoyer une requête POST à l'API Symfony
-    const response = await fetch('http://127.0.0.1:8000/api/login', {
+    const response = await fetch('https://restaurant-production-f40e.up.railway.app/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -101,7 +104,6 @@ const handleLogin = async () => {
     </div>
   </div>
 </template>
-
 <style>
 
 .login-container {
