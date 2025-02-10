@@ -3,7 +3,7 @@ import type { Ingredient, Dish, Recipe } from '../types'
 
 // Simulated API calls with Promise delays
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
-const URL_API = "https://restaurant-production-f40e.up.railway.app/api"
+const URL_API = "https://restaurant-production-f40e.up.railway.app/api/"
 
 const getAuthToken = () => localStorage.getItem("authToken");
 const headers = {
